@@ -96,6 +96,7 @@ public class myjavahello {
 				dan=str2.substring(1,num+1);
 			}
 			sit=dan.indexOf(x);
+			
 			if(sit==-1)
 			{
 				resu="";
