@@ -19,7 +19,7 @@ public class myjavahello {
 		}
 		if(f>0)//变量输入非法
 		{
-			System.out.println("variable is illegal");
+			System.out.println("变量不合法");
 			return str2;
 		}
 		sit=str2.indexOf(x);
@@ -202,7 +202,7 @@ public class myjavahello {
 		System.out.println(news2);
 		return news2;
 	}
-	public static void simplify(String str2,String x)
+	public static void simplify(String str2,String x)//str2为表达式，x为求值语句的后部分
 	{
 		int i,j,k,q,p,r,a,f=0,h=0,sit,add_num,m,sub_num,num,biao,d_sit,count=0,mi,fine=0;
 		float xi,xi_n,nn;
@@ -683,7 +683,7 @@ public class myjavahello {
 		}
 		else
 		{
-			System.out.println("0");
+			System.out.println("0");//最终结果为0
 		}
 }
 public static String expression(String str1,String str2)
