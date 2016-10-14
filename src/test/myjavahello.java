@@ -1316,7 +1316,7 @@ public static String expression(String str1,String str2)
 				{
 					System.out.println("错误：未输入合法多项式！");
 				}
-				else if(str1.length()==10&&str1.equalsIgnoreCase("!simplify "))
+				else if(str1.length()==10&&str1.equalsIgnoreCase("!simplify "))//只输入！simplify
 				{
 					System.out.println(str2);
 				}
