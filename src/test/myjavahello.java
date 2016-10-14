@@ -1299,7 +1299,7 @@ public static String expression(String str1,String str2)
 		str1=buf.readLine();
 		if(!str1.equalsIgnoreCase("end"))
 		{
-			if(str1.length()>=5&&str1.substring(0,5).equalsIgnoreCase("!d/d "))
+			if(str1.length()>=5&&str1.substring(0,5).equalsIgnoreCase("!d/d "))//导数
 			{
 				if(str2.equalsIgnoreCase(""))
 				{
@@ -1310,7 +1310,7 @@ public static String expression(String str1,String str2)
 					str2=derivative(str2,str1.substring(5));
 				}
 			}
-			else if(str1.length()>=10&&str1.substring(0,10).equalsIgnoreCase("!simplify "))
+			else if(str1.length()>=10&&str1.substring(0,10).equalsIgnoreCase("!simplify "))//求值
 			{
 				if(str2.equalsIgnoreCase(""))
 				{
@@ -1325,7 +1325,7 @@ public static String expression(String str1,String str2)
 					simplify(str2,str1.substring(10));
 				}
 			}
-			else
+			else//输入表达式处理
 			{
 				str2=expression(str1,str2);//前缀性变量报错
 			}
