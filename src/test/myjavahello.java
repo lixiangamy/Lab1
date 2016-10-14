@@ -1301,7 +1301,7 @@ public static String expression(String str1,String str2)
 		{
 			if(str1.length()>=5&&str1.substring(0,5).equalsIgnoreCase("!d/d "))//导数
 			{
-				if(str2.equalsIgnoreCase(""))
+				if(str2.equalsIgnoreCase(""))//若输入空字符串则报错
 				{
 					System.out.println("错误：未输入合法多项式！");
 				}
