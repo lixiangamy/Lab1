@@ -1290,7 +1290,7 @@ public static String expression(String str1,String str2)
 }
 	public static  void main(String args[])throws IOException
 	{
-		String str1="";
+		String str1="";//³õÊ¼»¯Îª¿Õ
 		String str2="";
 		do{
 		System.out.print(">");
