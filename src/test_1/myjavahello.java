@@ -30,7 +30,7 @@ public class myjavahello {
 		}
 
 		do
-		{
+		{//截取单项式分别求导
 			fine=0;
 			count++;
 			if(count>1)
