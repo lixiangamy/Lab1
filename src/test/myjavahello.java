@@ -1297,6 +1297,7 @@ public static String expression(String str1,String str2)
 		BufferedReader buf;
 		buf=new BufferedReader(new InputStreamReader(System.in));
 		str1=buf.readLine();
+		//str1为接收的字符串
 		if(!str1.equalsIgnoreCase("end"))
 		{
 			if(str1.length()>=5&&str1.substring(0,5).equalsIgnoreCase("!d/d "))//导数
@@ -1307,7 +1308,8 @@ public static String expression(String str1,String str2)
 				}
 				else
 				{
-					str2=derivative(str2,str1.substring(5));
+					str2=derivative(str2,str1.substring(5)); 
+					//将字符串转到函数中求导
 				}
 			}
 			else if(str1.length()>=10&&str1.substring(0,10).equalsIgnoreCase("!simplify "))//求值
