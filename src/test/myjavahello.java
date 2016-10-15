@@ -190,6 +190,7 @@ public class myjavahello {
 			news2=news2+resu;
 		}
 	}while(num!=-1);
+		//System.out.println(news2);
 		if(news2.charAt(0)=='+')
 		{
 			news2=news2.substring(1);
