@@ -1,6 +1,6 @@
 package test;
 import java.io.*;
-
+//手动修改
 public class myjavahello {
 	static String derivative(String str2,String x)//str2为表达式，x为变量
 	{
