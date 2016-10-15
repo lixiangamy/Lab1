@@ -686,6 +686,9 @@ public class myjavahello {
 			System.out.println("0");//最终结果为0
 		}
 }
+	/*函数功能：
+	 * 判断表达式是否合法、化简表达式并存储
+	 */
 public static String expression(String str1,String str2)
 {
 		String s2,z,sh,dan,res,var,dans,cun,dant="",s_rnd,rn,va_n,re_n,st4="",s_re="",str3="";
