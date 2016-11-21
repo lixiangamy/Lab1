@@ -1,6 +1,6 @@
 package test;
 import java.io.*;
-//手动修改
+
 public class myjavahello {
 	static String derivative(String str2,String x)//str2为表达式，x为变量
 	{
@@ -19,7 +19,7 @@ public class myjavahello {
 		}
 		if(f>0)//变量输入非法
 		{
-			System.out.println("变量不合法");
+			System.out.println("variable is illegal");
 			return str2;
 		}
 		sit=str2.indexOf(x);
@@ -30,7 +30,7 @@ public class myjavahello {
 		}
 
 		do
-		{//截取单项式分别求导
+		{
 			fine=0;
 			count++;
 			if(count>1)
@@ -148,7 +148,7 @@ public class myjavahello {
 					{
 						if((dan.charAt(dan.indexOf(x)+x.length()+1)=='2')&&(dan.indexOf(x)+x.length()+1==dan.length()-1)||(dan.indexOf(x)+x.length()+1!=dan.length()-1 && dan.charAt(dan.indexOf(x)+x.length()+2)=='*'))//若x为二次幂
 						{
-							resu='2'+'*'+dan.substring(0,dan.indexOf(x))+x+dan.substring(dan.indexOf(x)+x.length()+2);
+							resu="2*"+dan.substring(0,dan.indexOf(x))+x+dan.substring(dan.indexOf(x)+x.length()+2);
 							
 						}
 						else
@@ -190,7 +190,6 @@ public class myjavahello {
 			news2=news2+resu;
 		}
 	}while(num!=-1);
-		//System.out.println(news2);
 		if(news2.charAt(0)=='+')
 		{
 			news2=news2.substring(1);
@@ -202,7 +201,7 @@ public class myjavahello {
 		System.out.println(news2);
 		return news2;
 	}
-	public static void simplify(String str2,String x)//str2为表达式，x为求值语句的后部分
+	public static void simplify(String str2,String x)
 	{
 		int i,j,k,q,p,r,a,f=0,h=0,sit,add_num,m,sub_num,num,biao,d_sit,count=0,mi,fine=0;
 		float xi,xi_n,nn;
@@ -683,12 +682,9 @@ public class myjavahello {
 		}
 		else
 		{
-			System.out.println("0");//最终结果为0
+			System.out.println("0");
 		}
 }
-	/*函数功能：
-	 * 判断表达式是否合法、化简表达式并存储
-	 */
 public static String expression(String str1,String str2)
 {
 		String s2,z,sh,dan,res,var,dans,cun,dant="",s_rnd,rn,va_n,re_n,st4="",s_re="",str3="";
